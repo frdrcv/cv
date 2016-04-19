@@ -1,0 +1,83 @@
+%!TEX program = xelatex
+\documentclass[10pt,letter]{moderncv}
+\moderncvtheme[burgundy]{classic}                
+%\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage{polyglossia}
+\setdefaultlanguage{french} % Set default language for the Polyglossia package
+\setmainfont{TeX Gyre Pagella}      % texte en Pagella (Palatino)
+\usepackage{pdfpages}
+
+\firstname{Frédéric}
+\familyname{Vachon}
+\title{Candidat à la maîtrise en géographie}              
+\address{119, rue Saint-Luc}{Québec (Québec)  G1N 2R4}    
+\mobile{581~998~6179}                    
+\email{frederic.vachon.1@ulaval.ca}
+\social[linkedin]{frvachon}                       
+%\homepage{www.francoistessier.info}
+% Letter Information 
+\recipient{Réseau \textsc{Dialog}}{Institut national de la recherche
+  scientifique\\Centre Urbanisation Culture Société\\385, Sherbrooke
+  Est\\Montréal (Québec) H2X 1E3} % Letter recipient
+\date{\today} 
+\opening{Madame, monsieur} % Opening greeting
+\closing{Veuillez agréer mes plus sincères salutations,} % Closing phrase
+\enclosure[p. j.]{curriculum vit\ae{}} % List of enclosed documents
+\begin{document}
+\includepdf[pages={1}]{cv.pdf}
+{\fancyfoot[r]{}            % No page/lastapage in the letter
+  \setcounter{page}{0} % Change if letter is more than 1 page
+  \makelettertitle % Print letter title
+  La présente est pour vous proposer ma candidature au poste de stagiaire pour
+  le réseau \textsc{Dialog} pour l'été 2016.
+
+Je suis présentement candidat à la maîtrise en sciences géographiques à
+l'Université Laval. J'ai comme directrice Caroline Desbiens PhD (membre de
+\textsc{Dialog}) et je travaille présentement sur les géosymboles et la
+territorialité des communautés \textsc{Lgbtq}. Dans le cadre de mes études de
+premier cycle j'ai pu assister au cours GGR-3102: Territoire et ressources:
+enjeux et perspectives autochtones et je considère que j'ai une bonne base des
+enjeux entourant les populations autochtones. J'ai également développé durant
+mes études de second cycle de solides compétences en recherche documentaires
+étant donné la spécificité de mon sujet d'étude, sois la géographie
+\emph{queer}. Je maîtrise également plusieurs outils de gestion bibliographique
+ainsi que le langage \LaTeX{}; ainsi, il m'est possible de présenter une revue
+de littérature de façon claire et structurée.
+
+\makeletterclosing          % Print letter signature
+\newpage 
+\maketitle
+
+\section{Diplômes et Études}
+\cventry{En cours}{Maîtrise en Sciences Géographiques} {Université Laval}{}{}{}
+\cventry{2014}{Baccalauréat en Géographie} {Université Laval}{}{}{Concentration : Géographie humaine et historique }
+\cventry{2011}{Certificat en sociologie}{Université laval}{}{}{}
+\cventry{2010}{Techniques en Bureautique}{Cégep de Rimouski}{}{}{Spécialisation en micro-édition et hypermédia}
+
+\section{Expériences}
+\cventry{Septembre 2014\\à Aujourd'hui}{Auxiliaire d'enseignement}{Département de Géographie - Université Laval}{Québec}{Québec}{Correction des travaux et de l'examen final des étudiants. Accompagnement des étudiants lors des sorties sur terrain selon les cours.}
+\cventry{Octobre 2013\\à Juillet 2015}{Barman}{Bar-Coop l'AgitéE}{Québec}{Québec}{Service de bar. Opération du système AzBar. Remplissage des réfrigérateurs. Nettoyage des tables et service de "Busboy"\newline{}}
+\cventry{Octobre 2013\\à Octobre 2014}{Coordonnateur aux communications et à la gestion des caisses}{Bar-Coop l'AgitéE}{Québec}{Québec}{Mise en place des stratégies de communication du bar visant à attirer les membres et la clientèle. Coordination du comité communication composé de membres bénévoles dans l'atteinte de ce but. Comptage quotidien des caisses des travailleurs.\newline{}}
+\cventry{Novembre 2013}{Rédacteur de compte-rendu}{Réseau Villes Région Monde}{Québec}{Québec}{Prise de notes lors des présentations des chercheurs durant le colloque VRM. Rédaction d'un compte-rendu synthétisant le contenu présenté lors du colloque en vue d'être publié sur le site Internet du réseau interuniversitaire.\newline{}}
+\cventry{Août 2007\\à Septembre 2013}{Adjoint à la gestion / commis}{Dollarama}{Québec}{Québec}{Gestion des horaires des commis et commis-caissiers. Service à la clientèle. Manutention.\newline{}}
+\cventry{Juillet 2012\\à Août 2012}{Technicien en géomatique / stagiaire}{Ville de Québec, arrondissement de Beauport}{Québec}{Québec}{Mise à jour des données géospatiales des composantes routières de l'arrondissement à partir d'ArcGIS. Dessin des cartes nécessaires aux contractants de la ville de Québec pour les services publics (déneigement, entretient des terrains publics). Inventaire des regards, bornes fontaines et autres canalisation de l'arrondissement.\newline{}}
+\cventry{Mars 2010\\à Mai 2010}{Agent administratif / stagiaire}{Centre de Santé et de Services Sociaux Rimouski-Neigette}{Rimouski}{Québec}{Mise à jour des bases de données des ressources humaines. T\^aches administratives diverses.\newline{}}
+
+\section{Compétences}
+\subsection{Géographie}
+\cvcomputer{Intérêts de recherche}{Orientation sexuelle, genre, marginalité}{Logiciels maîtrisés}{ArcGIS, QGIS, MapInfo}
+\cvcomputer{Domaines de la géographie prévilégiés}{Géographie urbaine, géographie culturelle, SIG}{}{}
+
+\subsection{Compétences techniques}
+\cvcomputer{Outils bureautiques}{Microsoft Office, LibreOffice, \LaTeX.}{Autre}{VIM, Zotero, OS à base GNU/Linux.}
+
+\subsection{Langues}
+\cvlanguage{Français}{lu, parlé, écrit}{}
+\cvlanguage{Anglais}{lu, parlé, écrit}{}
+\cvlanguage{Espagnol}{notions}{}
+
+\section{Centres d'intérêt}
+\cvline{Loisirs}{Lecture, cyclisme, Linux, apprentissage autonome.}
+
+\end{document}
